@@ -32,19 +32,19 @@ RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
 RUN echo "mysql-server mysql-server/root_password password root" | debconf-set-selections
 RUN echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections
 
-# Install PHP 7.1 and extensions
+# Install PHP 7.3 and extensions
 RUN apt-get install -y \
-    php7.2 \
-    php7.2-cli \
-    php7.2-common \
-    php7.2-curl \
-    php7.2-gd \
-    php7.2-json \
-    php7.2-mbstring \
-    php7.2-mysql \
-    php7.2-xml \
-    php7.2-zip \
-    php7.2-intl \  
+    php7.3 \
+    php7.3-cli \
+    php7.3-common \
+    php7.3-curl \
+    php7.3-gd \
+    php7.3-json \
+    php7.3-mbstring \
+    php7.3-mysql \
+    php7.3-xml \
+    php7.3-zip \
+    php7.3-intl \  
     memcached \
     imagemagick \
     openssh-client \
